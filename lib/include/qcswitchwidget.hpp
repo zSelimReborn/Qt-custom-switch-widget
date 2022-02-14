@@ -28,11 +28,11 @@
 #  define QCSWITCH_DECL
 #endif
 
-class QCSWITCH_DECL QcSwitchWidget;
+/* class QCSWITCH_DECL QcSwitchWidget;
 class QCSWITCH_DECL ToggleBackground;
 class QCSWITCH_DECL ToggleCircle;
 class QCSWITCH_DECL ToggleButton;
-class QCSWITCH_DECL SwitchButton;
+class QCSWITCH_DECL SwitchButton; */
 
 class QCSWITCH_DECL QcSwitchWidget : public QWidget
 {
