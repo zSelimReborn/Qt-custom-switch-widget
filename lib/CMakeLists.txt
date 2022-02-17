@@ -28,6 +28,8 @@ target_compile_definitions(qcswitchwidget
         QCSWITCH_COMPILE_LIBRARY
         )
 
+add_compile_definitions(qcswitchwidget PRIVATE QCSWITCH_COMPILE_LIBRARY)
+
 target_link_libraries(qcswitchwidget
         PRIVATE
         Qt5::Core
