@@ -25,10 +25,8 @@ target_include_directories(qcswitchwidget
 
 target_compile_definitions(qcswitchwidget
         PRIVATE
-        QCSWITCH_COMPILE_LIBRARY
+        UNIQUE_QCSWITCH_COMPILE_LIBRARY
         )
-
-add_compile_definitions(qcswitchwidget PRIVATE QCSWITCH_COMPILE_LIBRARY)
 
 target_link_libraries(qcswitchwidget
         PRIVATE

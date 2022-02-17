@@ -20,12 +20,12 @@
 
 
 
-#if defined(QCSWITCH_COMPILE_LIBRARY)
-#  define QCSWITCH_DECL  Q_DECL_EXPORT
-#elif defined(QCSWITCH_USE_LIBRARY)
-#  define QCSWITCH_DECL Q_DECL_IMPORT
+#if defined(UNIQUE_QCSWITCH_COMPILE_LIBRARY)
+#  define UNIQUE_QCSWITCH_DECL  Q_DECL_EXPORT
+#elif defined(UNIQUE_QCSWITCH_USE_LIBRARY)
+#  define UNIQUE_QCSWITCH_DECL Q_DECL_IMPORT
 #else
-#  define QCSWITCH_DECL
+#  define UNIQUE_QCSWITCH_DECL
 #endif
 
 /* class QCSWITCH_DECL QcSwitchWidget;
@@ -34,7 +34,7 @@ class QCSWITCH_DECL ToggleCircle;
 class QCSWITCH_DECL ToggleButton;
 class QCSWITCH_DECL SwitchButton; */
 
-class QCSWITCH_DECL QcSwitchWidget : public QWidget
+class UNIQUE_QCSWITCH_DECL QcSwitchWidget : public QWidget
 {
 Q_OBJECT
 public:
@@ -102,7 +102,7 @@ private:
     void drawBezel(bool drawBezel);
 };
 
-class QCSWITCH_DECL ToggleBackground : public QWidget
+class UNIQUE_QCSWITCH_DECL ToggleBackground : public QWidget
 {
     Q_OBJECT
 public:
@@ -116,7 +116,7 @@ private:
     QColor          _pencolor;
 };
 
-class QCSWITCH_DECL ToggleCircle : public QWidget
+class UNIQUE_QCSWITCH_DECL ToggleCircle : public QWidget
 {
     Q_OBJECT
 public:
@@ -133,7 +133,7 @@ private:
     QLinearGradient _gradient;
 };
 
-class QCSWITCH_DECL ToggleButton : public QWidget
+class UNIQUE_QCSWITCH_DECL ToggleButton : public QWidget
 {
     Q_OBJECT
 public:
@@ -177,9 +177,9 @@ private:
     void _update();
 };
 
-QCSWITCH_DECL void setStylesheet(QWidget*, QString );
+UNIQUE_QCSWITCH_DECL void setStylesheet(QWidget*, QString );
 
-class QCSWITCH_DECL SwitchButton : public QWidget
+class UNIQUE_QCSWITCH_DECL SwitchButton : public QWidget
 {
     Q_OBJECT
 public:
