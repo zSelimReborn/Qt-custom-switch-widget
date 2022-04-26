@@ -1,6 +1,8 @@
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_AUTOMOC ON)
 
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
 find_package(Qt5 REQUIRED COMPONENTS
         Core
         Gui
@@ -15,7 +17,6 @@ add_library(qcswitchwidget SHARED
         src/qcswitchwidget.cpp
         ${QCSWITCHWIDGET_RESOURCE_ADDED}
         )
-set_target_properties(qcswitchwidget PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
 
 target_include_directories(qcswitchwidget
         PUBLIC
