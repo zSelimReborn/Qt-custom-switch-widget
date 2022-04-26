@@ -36,7 +36,7 @@ class QCSWITCH_DECL SwitchButton; */
 
 class UNIQUE_QCSWITCH_DECL QcSwitchWidget : public QWidget
 {
-Q_OBJECT
+
 public:
     explicit QcSwitchWidget(QWidget *parent = 0);
 
@@ -104,7 +104,7 @@ private:
 
 class UNIQUE_QCSWITCH_DECL ToggleBackground : public QWidget
 {
-    Q_OBJECT
+
 public:
     explicit ToggleBackground(QWidget* parent = nullptr, QColor color = Qt::white, bool rect = false);
     ~ToggleBackground() override;
@@ -118,7 +118,7 @@ private:
 
 class UNIQUE_QCSWITCH_DECL ToggleCircle : public QWidget
 {
-    Q_OBJECT
+
 public:
     explicit ToggleCircle(QWidget* parent = nullptr, QColor color = QColor(255, 255, 255), bool rect = false);
     ~ToggleCircle() override;
@@ -135,7 +135,7 @@ private:
 
 class UNIQUE_QCSWITCH_DECL ToggleButton : public QWidget
 {
-    Q_OBJECT
+
 public:
     enum Style
     {
@@ -181,7 +181,7 @@ UNIQUE_QCSWITCH_DECL void setStylesheet(QWidget*, QString );
 
 class UNIQUE_QCSWITCH_DECL SwitchButton : public QWidget
 {
-    Q_OBJECT
+
 public:
     explicit SwitchButton(QWidget* parent = nullptr);
     ~SwitchButton();
