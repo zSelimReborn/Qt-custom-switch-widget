@@ -15,6 +15,7 @@ add_library(qcswitchwidget SHARED
         src/qcswitchwidget.cpp
         ${QCSWITCHWIDGET_RESOURCE_ADDED}
         )
+set_target_properties(qcswitchwidget PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
 
 target_include_directories(qcswitchwidget
         PUBLIC
