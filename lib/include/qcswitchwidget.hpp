@@ -177,7 +177,11 @@ private:
     void _update();
 };
 
+#ifdef _WIN32
 UNIQUE_QCSWITCH_DECL void setStylesheet(QWidget*, QString );
+#else
+static UNIQUE_QCSWITCH_DECL void setStylesheet(QWidget*, QString );
+#endif
 
 class UNIQUE_QCSWITCH_DECL SwitchButton : public QWidget
 {
